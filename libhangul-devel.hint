@@ -1,5 +1,5 @@
 category: Text
-requires: libhangul0 gettext
+requires: libhangul1 gettext
 external-source: libhangul
 sdesc: "Korean input method library (development)"
 ldesc: "A library to support hangul input method logic, hanja dictionary 
