@@ -1,6 +1,0 @@
-category: Text
-requires: libintl8
-external-source: libhangul
-sdesc: "Korean input method library (runtime)"
-ldesc: "A library to support hangul input method logic, hanja dictionary 
-and small hangul character classification."

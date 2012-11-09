@@ -1,0 +1,23 @@
+NAME="libhangul"
+VERSION=0.1.0
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Korean input method library"
+DESCRIPTION="A library to support hangul input method logic, hanja dictionary
+and small hangul character classification."
+HOMEPAGE="http://code.google.com/p/libhangul/"
+SRC_URI="http://libhangul.googlecode.com/files/${P}.tar.gz"
+PATCH_URI="0.0.12-no-undefined.patch"
+
+PKG_NAMES="${PN}1 ${PN}-common ${PN}-devel"
+libhangul1_SUMMARY="${SUMMARY} (runtime)"
+libhangul1_REQUIRES="libhangul-common"
+libhangul1_CONTENTS="usr/bin/cyghangul-1.dll"
+libhangul_common_SUMMARY="${SUMMARY} (data)"
+libhangul_common_CONTENTS="usr/share/"
+libhangul_devel_SUMMARY="${SUMMARY} (development)"
+libhangul_devel_CONTENTS="usr/include/ usr/lib/"
+# sample app
+PKG_IGNORE="usr/bin/hangul.exe"
+
+KEEP_LA_FILES="none"
